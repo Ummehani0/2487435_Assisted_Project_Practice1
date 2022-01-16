@@ -7,17 +7,17 @@ import java.util.regex.Matcher;
 
 	public class ValidationOfEmailId {
 
-	static String [] dataBase= {"abrarahmedsheikh@gmail.com","Hussain75@gmail.com","Umme@wwe.com","Hani248@gmail.com","Bebo@gmail.com"
+	static String [] dataBase= {"abrarahmedsheikh@gmail.com","Hussain@gmail.com","Umme@io.com","Hani@gmail.com","Bebo@gmail.com"
 	};
 
 
 	public static void main(String[] args) {
-	System.out.println("<----- Welecome To Email ID Verfication App-----> ");
+	System.out.println("<----- Email ID Verfication App-----> ");
 	System.out.println("__________________________________________________");
 	Scanner inp= new Scanner(System.in);
 	String userID;
 	while (true){
-	System.out.println(" Please Enter your User ID ");
+	System.out.println(" Please Enter your email ID ");
 	userID = inp.next();
 	System.out.println("__________________________________________________");
 	while(theFormat(userID))
