@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+����xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<meta charset="ISO-8859-1">
+<title>Find User</title>
+</head>
+<body>
+ <div aling="center">
+    <H3>Find User By UserName</H3>
+    <br>
+    <form action="#" th:action="@{/find{username}" th:object="${userdetails}" method ="post">
+         <table border="3" cellpadding="1">
+            <tr>
+            
+              <td><strong><center>UserName:</center></strong></td>
+                <td> <center><input type="text" th:feild="*{username}"/>  </center> 
+                  </td>
+         
+           </tr>      
+            </table>  
+            <br>  
+            
+								<button class="btn btn-warning btn-md">Search  user here</button>
+								
+				
+								
+    </form>
+ </div>
+</body>
+</html>

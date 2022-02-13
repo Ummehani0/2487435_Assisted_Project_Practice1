@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<meta charset="ISO-8859-1">
+<title>Welcome page</title>
+</head>
+<body>
+<div aling="center">
+<br>
+<br>
+<br>
+<br>
+<br>
+<em><center><h1 style="color:#501245;">Welcome to Sporty Shoes :)</h1></center></em>
+<br>
+	<table width="100%" height="100%" border="0" cellpadding="25"
+		align="center">
+		<tr>
+			<td align="center" valign="middle">
+z				<table class="table-bordered" width="300" border="0" cellpadding="3"
+					cellspacing="0" bgcolor="#F3E2F0">
+
+					<form action="#" th:action="@{/adminlogin}" th:object="${user}"
+						method="post">
+
+
+						<tr>
+							<td height="25" colspan="2" align="left" valign="middle"
+								bgcolor="#501245" class="style2">
+								<div align="center">
+								<strong style="color:#F3E2F0;">Admin Login</strong>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td><strong> Username</strong></td>
+							<td>
+							
+							<div>
+							<input type ="text" id="Username" name=Username placeholder="Username">
+							</div>
+							</td>
+						</tr>
+						<tr>
+							<td><strong>  Password</strong></td>
+							<td>
+								<div>
+								
+								<input type = "password" id="password" name=password placeholder="password">
+								</div>
+								</td>
+								
+						</tr>
+						<tr>
+							<td><strong> New Password</strong></td>
+							<td>
+							<div>
+							
+							<input type="password" id="New Password" name=New Password placeholder="New Password">
+							
+							
+							</div>
+							</td>
+						</tr>
+						<tr>
+							<td 
+							
+						</tr>	
+										
+				
+
+				</table>
+			</td>
+		</tr>
+	</table>
+	<div class="container">
+							<div class="text-center">
+								<button class="btn btn-dark">Login/changepassword</button>
+								
+								</td>
+								</div>
+								</div>
+	</form>
+					
+</body>
+</html>
