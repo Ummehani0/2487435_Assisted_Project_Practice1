@@ -1,0 +1,28 @@
+
+<!--<div class="card" style="width: 18rem;" *ngFor="let item of items">
+    <img class="card-img-top" [src]="item.avatar" alt="{{item.name}}">
+    <div class="card-body">
+        <ul >
+            <li class="list-group-item">Id:{{item.id}}</li>
+            <li class="list-group-item">Name:{{item.name}}</li>
+            <li class="list-group-item">Price{{item.price}}</li>
+            <li class="list-group-item">Quantity:{{item.quantity}}</li>
+          </ul>
+    </div>
+  </div>-->
+  <div class="container">
+    <div class="card-deck">
+    <div class="card" style="width:18rem;" *ngFor="let product of items">
+        <img class="card-text" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrPLOvQIUT-r4zGDOxkTthtDoH0zzRt1yIjw&usqp=CAU" alt="{{product.name}}'s Image" width="5%" height="10%">
+        <div class="card-body text-center">
+            <h5 class="card-title">{{product.name}}'s Details</h5>
+            <p class="card-text">Id : {{product.id}}</p>
+            <p class="card-text">quantity : {{product.quantity}}</p>
+            <p class="card-text">price : {{product.price}}</p>
+            <!--<button (click)="addTopayment(product)">Payment</button>-->
+            <button class="middle" (click)="payment()" class="btn btn-outline-success" style="margin-left: 50% ;">YES ORDER</button>
+        </div>
+    </div>
+    
+</div>
+</div>

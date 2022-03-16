@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="card-deck">
+    <div class="card" style="width:18rem;" *ngFor="let product of productlist">
+        
+        <img class="card-text" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgG-ddX7RarZAy8QNmLjsJziHIwGp52byuow&usqp=CAU" width="20%" height="35%">
+       
+        <div class="card-body text-center">
+            <h5 class="card-title">{{product.name}}'s Details</h5>
+            <p class="card-text">Id : {{product.id}}</p>
+            <p class="card-text">quantity : {{product.quantity}}</p>
+            <p class="card-text">price : {{product.price}}</p>
+            <button (click)="addToCart(product)">Buy</button>
+        </div>
+    </div>
+    
+    
+</div>
+</div>
